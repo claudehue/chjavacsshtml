@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head><title> projet number 2</title></head>
+<body>
+<center id="ee" style="position:absolute;
+top:80px; 
+left:1110px;
+z-index:1000;
+width:200px;
+height:200px;
+text-align:center;">
+<b>
+HTML is often considered the best computer language because of its simplicity, accessibility, and universality. 
+Unlike complex programming languages, HTML is easy to learn and understand, making it ideal for beginners while remaining essential for professionals. 
+It is supported by all web browsers, works seamlessly across platforms, and integrates perfectly with other technologies such as CSS and JavaScript.
+</b>
+</center>
+
+<center id = ff style="position:absolute;
+top:80px; 
+left:50px;
+z-index:1000;
+width:200px;
+height:200px;
+text-align:center;">
+<b>
+HTML is the foundational language of the World Wide Web.<br>
+It is used to structure and present content on websites,<br>  
+enabling browsers to interpret text, images, links, and multimedia elements<br>
+in a clear and consistent way.<br><br>
+As the first language learned by many developers,<br>
+HTML plays a critical role in web development<br>
+and serves as the backbone for modern digital communication.
+</b>
+</center> 
+<img id="bg"
+src="htmlpic.jpg"
+style="
+width:1395px;
+height:715px;
+position:absolute;
+top:-50px;
+left:0px;
+z-index:1;">
+<img src="html.png" 
+onclick="changeToHTML()"
+style="
+height:100px;
+width: 100px;
+position:absolute;
+top: 450px;
+left:1070px;
+z-index: 600;">
+<img src="java.png"
+onclick="changeToJAVA()"
+style="
+height:100px;
+width: 100px;
+position:absolute;
+top: 450px;
+left:1270px;
+z-index: 600;
+cursor:pointer;">
+<img src="css.png"
+id="cssBtn"
+onclick="changeToCSS()"
+style="
+height:100px;
+width:100px;
+position:absolute;
+top:450px;
+left:1170px;
+cursor:pointer;
+z-index: 600;">
+<div class="square"></div>
+<div class="square2"></div>
+<style>
+.square {
+  width: 230px;
+  height: 360px;
+  background-color: rgb(224, 87, 33);
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 500;
+  box-shadow: -10px 10px 5px rgb(0, 0, 0);
+}
+.square2 {
+  width: 230px;
+  height: 360px;
+  background-color: rgb(224, 87, 33);
+  position: absolute;
+  top: 50px;
+  left: 1100px;
+  z-index: 500;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+</style>
+<script>
+function changeToCSS() {
+document.getElementById("bg").src = "logo css sur fond bleu vibrant.png";
+document.getElementById("ee").innerHTML =
+"<b>C++ is a powerful programming language used to build fast and efficient software. It is commonly used for game development, operating systems, and performance-critical applications. C++ gives developers full control over memory and system resources, making programs run faster and more efficiently.</b>";
+document.getElementById("ff").innerHTML =
+"<b>C++ is good because it is high-performance, flexible, and widely used. It allows programmers to write low-level code while still supporting modern programming features, which makes it ideal for both beginners who want to learn how computers work and professionals who need maximum speed and control.</b>";
+}
+function changeToHTML() {
+document.getElementById("bg").src="htmlpic.jpg";
+document.getElementById("ee").innerHTML="<b>HTML is often considered the best computer language because of its simplicity, accessibility, and universality. Unlike complex programming languages, HTML is easy to learn and understand, making it ideal for beginners while remaining essential for professionals.It is supported by all web browsers, works seamlessly across platforms, and integrates perfectly with other technologies such as CSS and JavaScript. </b>";
+document.getElementById("ff").innerHTML="<b>HTML is the foundational language of the World Wide Web.<br>It is used to structure and present content on websites,<br>  enabling browsers to interpret text, images, links, and multimedia elements<br>in a clear and consistent way.<br><br>As the first language learned by many developers,<br>HTML plays a critical role in web development<br>and serves as the backbone for modern digital communication.</b>";
+}
+function changeToJAVA() {
+document.getElementById("bg").src="java_backround.png";
+document.getElementById("ee").innerHTML="<b>Java is a powerful and versatile programming language widely used to build applications, games, and large-scale enterprise systems. It is known for its strong performance, security, and stability, which makes it a trusted choice for professional software development. Java’s clear structure helps developers write clean, organized, and maintainable code, reducing errors in complex projects.</b>";
+document.getElementById("ff").innerHTML="<b>One of Java’s greatest strengths is its platform independence, meaning programs can run on different devices without modification. This “write once, run anywhere” feature allows Java applications to work on Windows, macOS, Linux, and many other platforms. Because of its reliability and flexibility, Java is widely used in web servers, mobile applications, and large corporate systems around the world.</b>";
+}
+
+</script>
+</body>
+</html>
+
